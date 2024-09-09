@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.request-form {
+    width: 900px;
+    height: 800px;
+    border: 1px solid black;
+}
+
+.request-form .heading {
+    width: 100%;
+    height: 99px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.heading .logo {
+    width: 160px;
+    border-right: 1px solid black;
+    display: flex;
+    border-bottom: 2px solid black;
+    height: 100%;
+}
+
+.logo img
+{
+    width:100px;
+    height: 40px;
+    margin: auto;
+}
+
+.heading .title {
+    width: 58%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.doc-template-info {
+    height: auto;
+}
+
+.doc-template-info table{
+    font-size: 12px;
+    border-collapse: collapse;
+    border-right: 1px solid black;
+    height: auto;
+}
+
+.doc-template-info table .doc-temp-prop {
+    width: 35%;
+}
+
+.doc-template-info td {
+    padding: 3px;
+    border-left: 1px solid black; /* Add border to table cells / / Stretch cells vertically */
+    border-bottom: 1px solid black;
+}
+
+.doc-template-info tr:last-child{
+    border-bottom: 2px solid black;
+}
+
+.request-form .ordercode {
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start
+}
+
+.ordercode .label{
+    width: 146.15px;
+    border-right: 1px solid black;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+
+.ordercode .value {
+    width: 15%;
+    padding: 2px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+
+.request-form .sample-info {
+    width: 100%;
+    padding-top: 2px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+                                
+.sample-info .sample-info-heading{
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sample-info .sample-info-section-1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid black;
+}
+
+.sample-info-section-1 .sample-location {
+    width: 25%;
+    border-right: 1px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+.sample-info-section-1 .sample-point {
+    width: 35%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.sample-info-section-1 .temp-label {
+    width: 10%;
+    padding-top: 3px;
+    border-right: 1px solid black;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+.sample-info-section-1 .temp-value {
+    width: 11%;
+    padding-top: 3px;
+    border-right: 1px solid black;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.sample-info-section-1 .pressure-label {
+    width: 7%;
+    padding-top: 3px;
+    border-right: 1px solid black;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+.sample-info-section-1 .pressure-value {
+    width: 12%;
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.sample-info-section-2 {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+    .sample-info-section-2 .sampledby-label {
+        width: 25%;
+        height: 100%;
+        border-right: 1px solid black;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .sample-info-section-2 .op-label {
+        width: 17%;
+        border-right: 1px solid black;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        text-align: center;
+    }
+
+    .sample-info-section-2 .op-value {
+        width: 8%;
+        display: grid;
+        place-items: center;
+        border-right: 1px solid black;
+        height: 100%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .sample-info-section-2 .lab-label {
+        width: 20%;
+        border-right: 1px solid black;
+        height: 100%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        display: grid;
+        place-items: center;
+    }
+
+    .sample-info-section-2 .lab-value {
+        display: grid;
+        place-items: center;
+        width: 11%;
+        border-right: 1px solid black;
+        height: 100%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .sample-info-section-2 .ex-label {
+        width: 7%;
+        border-right: 1px solid black;
+        height: 100%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 4px;
+    }
+
+    .sample-info-section-2 .ex-value {
+        width: 12%;
+        padding-top: 3px;
+        height: 100%;
+        padding-bottom: 3px;
+        display: grid;
+        place-items: center;
+    }
+
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: white;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 0px;
+    display: grid;
+    place-content: center;
+}
+
+    input[type="checkbox"]::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        transform: scale(0);
+        /* Windows High Contrast Mode */
+        background-color: black;
+    }
+
+    input[type="checkbox"]:checked::before {
+        transform: scale(0.8);
+    }
+
+
+.sample-info-section-3
+{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid black;
+}
+
+.sample-info-section-3 .count-label {
+    width: 25%;
+    border-right: 1px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.sample-info-section-3 .count-value {
+    width: 75%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: grid;
+    place-items: center;
+}
+
+.sample-info-section-4 {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid black;
+}
+
+.sample-info-section-4 .sample-pack-label {
+    width: 25%;
+    border-right: 1px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.sample-info-section-4 .sample-pack-value {
+    width: 75%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: grid;
+    place-items: center;
+}
+
+.sample-description {
+
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid black; 
+}
+
+.sample-description .label {
+    width: 25%;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sample-description .value {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.value .headers {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+.headers span {
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid black;
+}
+
+.headers span:last-child {
+    border-right: none;
+}
+
+.value .values {
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.values span {
+    width: 100px;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values span:last-child {
+    border-right: none;
+}
+
+.sample-security-info {
+    width: 100%;
+    display: flex;
+    height: 200px;
+    justify-content: flex-start;
+}
+
+.sample-security-info .info-label {
+    width: 25%;
+    border-right: 1px solid black;
+}
+
+.sample-security-info .security-checks {
+    width: 50%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.security-checks .security-checks-1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    height: 100px;  
+}
+
+.security-checks .security-checks-2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    height: 100px;
+}
+
+.security-checks-1 .checkboxes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+}
+
+.security-checks-1 .icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;     
+    height: 50px;
+    text-wrap: wrap;
+}
+
+.security-checks-1 .labels {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    text-wrap: wrap;
+}
+
+.security-checks-2 .checkboxes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+}
+
+.security-checks-2 .icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;     
+    height: 50px;
+}
+
+.security-checks-2 .labels {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+}
+
+.labels span {
+    width: 20.1%;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-wrap: wrap;
+}
+
+.labels span:last-child {
+    border-right: none;
+}
+
+.icons span {
+    width: 100px;
+    display: grid;
+    place-items: center;
+    text-wrap: none;
+    border-right: 1px solid black;
+    height: 100%;
+    
+}
+
+.icons span:last-child {
+    border-right: none;
+}
+
+.checkboxes span{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100px;
+}
+
+.checkboxes span:last-child {
+    border-right: none;
+}
+
+.labels .msds {
+    border-bottom: none;
+}
+
+.labels .msds {
+    padding-top: 30px;
+}
+
+
+.sample-security-info .security-note {
+    width: 25%;
+    font-weight: bold;
+    font-size: 13px;
+}

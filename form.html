@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+    <main class="request-form">
+
+        <section class="heading">
+
+            <section class="logo"><img src="images/sdm_logo.jpg" /></section>
+            <section class="title"><strong><span>{INTERNAL_ANALYSIS_REQUEST_FORM}</span></strong></section>
+            <section class="doc-template-info">
+                <table>
+                    <tr><td class="doc-temp-prop">{Document_NO}</td><td>SDM-H-00-LAB-PRO-0002-FRM-001</td></tr>
+                    <tr><td class="doc-temp-prop">{Release_DATE}</td><td>19.04.2023</td></tr>
+                    <tr><td class="doc-temp-prop">{Revision_NO}</td><td>R1</td></tr>
+                    <tr><td class="doc-temp-prop">{page_NO}</td><td>1/1</td></tr>
+                </table>
+            </section>
+        </section>
+
+        <section class="ordercode">
+
+            <section class="label">{Order_Code}</section><section class="value">{orderCode}</section>
+
+        </section>
+
+        <section class="sample-info">
+
+            <span class="sample-info-heading">{SampleInformation}</span>
+
+
+            <section class="sample-info-section-1">
+
+                <span class="sample-location">Nümunəgötürmə yeri: </span><span class="sample-point">{samplePoint}</span>
+                <span class="temp-label">Temperatur</span><span class="temp-value">{temperature}</span>
+                <span class="pressure-label">Təzyiq</span><span class="pressure-value">{pressure}</span>
+
+            </section>
+
+            <section class="sample-info-section-2">
+
+                <span class="sampledby-label">Nümunə götürən:</span>
+                <span class="op-label">Əməliyyat</span><section class="op-value"><input type="checkbox" /></section>
+                <span class="lab-label">Laboratoriya</span><section class="lab-value"><input type="checkbox" /></section>
+                <span class="ex-label">Xarici</span>
+                <span class="ex-value"><input type="checkbox" /></span>
+
+            </section>
+
+            <section class="sample-info-section-3">
+
+                <span class="count-label">{AmountOfSample}</span>
+                <span class="count-value">{sampleCount}</span>
+
+            </section>
+
+            <section class="sample-info-section-4">
+
+                <span class="sample-pack-label">{PackagingofSample}</span>
+                <span class="sample-pack-value">{sampleContainer}</span>
+
+            </section>
+
+            <section class="sample-description">
+                <span class="label">{SampleDescription}</span>
+                <section class="value">
+
+                    <section class="headers">
+                        <span>{CrudeOil}</span>
+                        <span>{Gas}</span>
+                        <span>{Diesel}</span>
+                        <span>{Gasoline}</span>
+                        <span>{Naphtha}</span>
+                        <span>{Kerosene}</span>
+                        <span>{Water}</span>
+                        <span>{Other}</span>
+                    </section>
+                    <section class="values">
+                        <span><input type="checkbox" id="desc-1"/></span>
+                        <span><input type="checkbox" id="desc-2"/></span>
+                        <span><input type="checkbox" id="desc-3"/></span>
+                        <span><input type="checkbox" id="desc-4"/></span>
+                        <span><input type="checkbox" id="desc-5"/></span>
+                        <span><input type="checkbox" id="desc-6"/></span>
+                        <span><input type="checkbox" id="desc-7"/></span>
+                        <span><input type="checkbox" id="desc-8"/></span>
+                    </section>
+
+                </section>
+
+
+
+            </section>
+        </section>
+
+        <section class="sample-security-info">
+
+            <span class="info-label">{SafetyInformation}</span>
+
+            <section class="security-checks">
+                <section class="security-checks-1">
+
+                            <section class="labels">
+                                <span>{H2S}</span>
+                                <span>{Oxidizing}</span>
+                                <span>{Explosive}</span>
+                                <span>{Carcinogenic}</span>
+                                <span>{Flammable}</span>
+                            </section>
+
+                            <section class="icons">
+                                <span><img src="images/h2s.jpg" alt="" width="40" height="40"></span>
+                                <span><img src="images/oxidation.jpg" alt="" width="40" height="40"></span>
+                                <span><img src="images/explosive.jpg" alt="" width="40" height="40"></span>
+                                <span><img src="images/carcinogenic.jpg" alt="" width="40" height="40"></span>
+                                <span><img src="images/flame.jpg" alt="" width="40" height="40"></span>
+                            </section>
+
+                            <section class="checkboxes">
+                                <span><input type="checkbox" id="check-1"></span>
+                                <span><input type="checkbox" id="check-1"></span>
+                                <span><input type="checkbox" id="check-3"></span>
+                                <span><input type="checkbox" id="check-4"></span>
+                                <span><input type="checkbox" id="check-5"></span>
+                            </section>
+                            
+                </section>
+                <section class="security-checks-2">
+                    <section class="labels">
+                        <span>{Toxic}</span>
+                        <span>{Danger to environment}</span>
+                        <span>{Corrosive}</span>
+                        <span>{Harmful}</span>
+                        <span class="msds">{MSDS}</span>
+                    </section>
+
+                    <section class="icons">
+                        <span><img src="images/toxic.jpg" alt="" width="40" height="40"></span>
+                        <span><img src="images/environmental.jpg" alt="" width="40" height="40"></span>
+                        <span><img src="images/corrosive.jpg" alt="" width="40" height="40"></span>
+                        <span><img src="images/harmful.jpg" alt="" width="40" height="40"></span>
+                        <span class="msds"></span>
+                    </section>
+
+                    <section class="checkboxes">
+                        <span><input type="checkbox" id="check-1"></span>
+                        <span><input type="checkbox" id="check-1"></span>
+                        <span><input type="checkbox" id="check-3"></span>
+                        <span><input type="checkbox" id="check-4"></span>
+                        <span><input type="checkbox" id="check-5"></span>
+                    </section>
+                </section>
+            </section>
+
+            <section class="security-note">
+                <span>Comments: {SecurityNote}</span>
+            </section>
+            
+        </section>
+
+        <section>
+            <span>{RequiredAnalyses}</span>
+            <table>
+                <tr><td>{TestMethod}</td><td>{Specification}</td><td>{Parameter}</td><td>{Unit}</td></tr>
+                {RequiredAnalyses}
+
+            </table>
+        </section>
+
+        <section>
+            <span>{JustificationAndScopeOfWork}</span>
+        </section>
+
+        <section>
+            <span>{Requestor}</span>
+            <table>
+                <tr><td>{FullName}</td><td>{Position}</td><td>{Department}</td><td>{Date}</td><td>{Signature}</td></tr>
+                <tr><td>{requestorFullName}</td><td>{requestorPosition}</td><td>{requestorDepartment}</td><td>{requestorDate}</td><td>{requestorSignature}</td></tr>
+            </table>
+
+            <span>{RequestorsApproval}</span>
+            <table>
+                <tr><td>{FullName}</td><td>{Position}</td><td>{Department}</td><td>{Date}</td><td>{Signature}</td></tr>
+                <tr><td>{managerFullName}</td><td>{managerPosition}</td><td>{managerDepartment}</td><td>{managerApproveDate}</td><td>{managerSignature}</td></tr>
+            </table>
+
+            <span>{Lab}</span>
+            <table>
+                <tr><td>{FullName}</td><td>{Position}</td><td>{Department}</td><td>{Date}</td><td>{Signature}</td></tr>
+                <tr><td>{labFullName}</td><td>{labPosition}</td><td>{labDepartment}</td><td>{labDate}</td><td>{labSignature}</td></tr>
+            </table>
+
+        </section>
+
+     
+        
+
+    </main>
+</body>
+</html>
